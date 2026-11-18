@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Título da aba e textos que aparecem no Google e ao compartilhar o link (WhatsApp, redes sociais) -->
+<title>Foxify · Sites, Landing Pages e Automações</title>
+<meta name="description" content="Foxify cria sites para qualquer nicho, landing pages que convertem e automações que economizam horas do seu negócio.">
+<link rel="icon" href="assets/logo.webp">
+<meta property="og:title" content="Foxify · Sites, Landing Pages e Automações">
+<meta property="og:description" content="Seu negócio com presença digital esperta. Sites, landing pages e automações sob medida.">
+<meta property="og:image" content="assets/logo.webp">
+<!-- Fontes do Google: Bebas Neue (títulos), DM Sans (textos), JetBrains Mono (detalhes de código) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<!-- Estilos do site (cores, fontes, layout): tudo no style.css -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== MENU ===================== -->
+<header>
+  <nav class="wrap nav">
+    <!-- Logo: só o texto FOX/FY -->
+    <a href="#" class="brand"><span>FOX<b>/</b>FY</span></a>
+    <!-- Links do menu: o href="#id" leva até a seção com aquele id -->
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#nichos">Nichos</a></li>
+      <li><a href="#processo">Como funciona</a></li>
+      <li><a href="#planos">Pacotes</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+    </ul>
+    <a href="#contato" class="btn btn-pri">Orçamento grátis</a>
+  </nav>
+</header>
+
+<main>
+<!-- ===================== TOPO (hero) ===================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">sites · landing pages · automações</span>
+      <h1>Seu negócio mais <em>esperto</em> na internet.</h1>
+      <p class="lead">Crio sites para qualquer nicho, landing pages feitas para vender e automações que tiram o trabalho repetitivo da sua rotina. Tudo sob medida, do design ao código.</p>
+      <div class="ctas">
+        <a href="#contato" class="btn btn-pri">Quero meu projeto →</a>
+        <a href="#servicos" class="btn btn-sec">Ver serviços</a>
+      </div>
+    </div>
+    <!-- Raposa 3D. data-camera = distância da câmera (menor = raposa maior). -->
+    <div class="hero-vis">
+      <div class="logo-card"><div class="fox3d" data-fox3d data-camera="17" role="img" aria-label="Mascote Foxify em 3D: raposa piscando com tapa-olho de controle"></div><img src="assets/logo.webp" alt="Mascote Foxify: raposa piscando com tapa-olho de controle"></div>
+      <p class="drag-hint mono">← arraste para girar →</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAIXA ANIMADA =====================
+     Os itens aparecem 2x de propósito: é isso que faz a rolagem parecer infinita.
+     Se mudar um item, mude nas duas linhas. -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Sites institucionais</span><span>Landing pages</span><span>Automações</span><span>Integrações</span><span>E-commerce</span><span>Chatbots</span><span>Sistemas web</span>
+    <span>Sites institucionais</span><span>Landing pages</span><span>Automações</span><span>Integrações</span><span>E-commerce</span><span>Chatbots</span><span>Sistemas web</span>
+  </div>
+</div>
+
+<!-- ===================== SERVIÇOS =====================
+     Cada <article class="svc"> é um cartão. "feat" deixa o cartão rosa (destaque). -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">serviços</span>
+      <h2>O que a Foxify faz por você</h2>
+      <p>Três caminhos para colocar seu negócio para trabalhar melhor. Pode escolher um ou combinar.</p>
+    </div>
+    <div class="services">
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="15" rx="2"/><path d="M2 8h20M8 21h8M12 18v3"/></svg></div>
+        <h3>Sites para qualquer nicho</h3>
+        <p>Um site com a cara da sua marca, que passa confiança e é encontrado no Google.</p>
+        <ul>
+          <li>Design exclusivo e responsivo</li>
+          <li>Otimizado para SEO e velocidade</li>
+          <li>Botão de WhatsApp e formulários</li>
+          <li>Fácil de atualizar</li>
+        </ul>
+      </article>
+      <article class="svc feat reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/><path d="M15 7h5v5"/></svg></div>
+        <h3>Landing pages que convertem</h3>
+        <p>Uma página com um único objetivo: fazer o visitante virar cliente.</p>
+        <ul>
+          <li>Copy e estrutura pensadas para venda</li>
+          <li>Integração com pixel, Google Ads e CRM</li>
+          <li>Ideal para lançamentos e tráfego pago</li>
+          <li>Entrega rápida</li>
+        </ul>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+        <h3>Automações</h3>
+        <p>Processos que levavam horas passam a rodar sozinhos em minutos.</p>
+        <ul>
+          <li>Integração entre sistemas, planilhas e ERP</li>
+          <li>Mensagens e notificações automáticas</li>
+          <li>Relatórios gerados sem esforço</li>
+          <li>Chatbots e fluxos de atendimento</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NICHOS =====================
+     Para adicionar um nicho: copie um <span class="chip">…</span> e troque o texto. -->
+<section id="nichos" class="niches">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">nichos</span>
+      <h2>Seu nicho também cabe aqui</h2>
+      <p>Cada mercado tem seu jeito de vender. O site se adapta a ele, não o contrário.</p>
+    </div>
+    <div class="chips reveal">
+      <span class="chip"> Saúde e clínicas</span><span class="chip"> Advocacia</span><span class="chip"> Beleza e estética</span>
+      <span class="chip"> Restaurantes e delivery</span><span class="chip"> Imobiliárias</span><span class="chip"> Academias e personal</span>
+      <span class="chip"> Psicologia e terapia</span><span class="chip"> Lojas e e-commerce</span><span class="chip"> Cursos e infoprodutos</span>
+      <span class="chip"> Prestadores de serviço</span><span class="chip"> Pet shops e veterinários</span><span class="chip"> Consultorias e B2B</span>
+      <span class="chip"> Eventos e casamentos</span><span class="chip more">+ o seu nicho</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMO FUNCIONA =====================
+     Os números 01, 02, 03… são gerados pelo CSS, não precisa escrever. -->
+<section id="processo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">como funciona</span>
+      <h2>Do papo ao site no ar</h2>
+      <p>Um processo simples e transparente. Você acompanha cada etapa.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Conversa</h3><p>Entendo seu negócio, seu público e o que você quer alcançar. Antes do código, o problema.</p></div>
+      <div class="step reveal"><h3>Proposta</h3><p>Você recebe escopo, prazo e valor fechados. Sem surpresa no meio do caminho.</p></div>
+      <div class="step reveal"><h3>Criação</h3><p>Design e desenvolvimento com prévias para você aprovar e pedir ajustes.</p></div>
+      <div class="step reveal"><h3>Entrega</h3><p>Publicação, domínio configurado, orientações de uso e suporte depois do lançamento.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PACOTES =====================
+     "hot" = pacote em destaque (fundo preto). data-plan no botão já deixa
+     esse serviço escolhido no formulário de contato. -->
+<section id="planos" class="no-top">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">pacotes</span>
+      <h2>Escolha seu ponto de partida</h2>
+      <p>Todo projeto é orçado sob medida. Os pacotes abaixo ajudam você a saber por onde começar.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <h3>Landing Page</h3>
+        <p class="for">Para quem quer vender um produto, serviço ou lançamento.</p>
+        <ul>
+          <li>Página única focada em conversão</li>
+          <li>Formulário ou botão de WhatsApp</li>
+          <li>Pixel e analytics configurados</li>
+          <li>Hospedagem e domínio orientados</li>
+        </ul>
+        <a href="#contato" class="btn btn-sec" data-plan="Landing Page">Pedir orçamento</a>
+      </div>
+      <div class="plan hot reveal">
+        <span class="badge">mais pedido</span>
+        <h3>Site Completo</h3>
+        <p class="for">Para negócios que precisam de presença profissional.</p>
+        <ul>
+          <li>Várias páginas (início, sobre, serviços, contato…)</li>
+          <li>Design exclusivo para o seu nicho</li>
+          <li>SEO básico e Google Meu Negócio</li>
+          <li>Blog ou catálogo opcional</li>
+          <li>30 dias de suporte após a entrega</li>
+        </ul>
+        <a href="#contato" class="btn" data-plan="Site Completo">Pedir orçamento</a>
+      </div>
+      <div class="plan reveal">
+        <h3>Automação</h3>
+        <p class="for">Para quem perde horas em tarefas repetitivas.</p>
+        <ul>
+          <li>Diagnóstico dos seus processos</li>
+          <li>Integração entre ferramentas e sistemas</li>
+          <li>Fluxos automáticos e relatórios</li>
+          <li>Documentação e treinamento</li>
+        </ul>
+        <a href="#contato" class="btn btn-sec" data-plan="Automação">Pedir orçamento</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE ===================== -->
+<section id="sobre" class="no-top">
+  <div class="wrap about-grid">
+    <pre class="code reveal"><span class="c">// quem está por trás da Foxify</span>
+<span class="k">const</span> dev = {
+  nome: <span class="s">"Graziela Romualdo"</span>,
+  funcao: <span class="s">"Desenvolvedora Full Stack"</span>,
+  cidade: <span class="s">"Campinas-SP"</span>,
+  idiomas: [<span class="s">"PT"</span>, <span class="s">"EN"</span>, <span class="s">"ES"</span>],
+  status: <span class="s">"aberta a projetos"</span>,
+};</pre>
+    <div class="about reveal">
+      <span class="eyebrow">quem faz</span>
+      <h2>Prazer, sou a Graziela.</h2>
+      <p>Sou <strong>desenvolvedora full stack</strong> e crio sites, sistemas e automações da interface ao banco de dados. Antes de escrever qualquer linha de código, quero entender o problema.</p>
+      <p>No meu dia a dia conecto ERP, Teams e Azure para que processos que levavam <strong>horas terminem em minutos</strong>. É essa mesma lógica que levo para o seu negócio.</p>
+      <p>Prefiro código simples a código "esperto", e só considero um projeto pronto quando as pessoas realmente usam.</p>
+      <a href="https://grraziela-romualdo.vercel.app/" target="_blank" rel="noopener" class="btn btn-sec">Ver meu portfólio ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PERGUNTAS FREQUENTES =====================
+     Cada <details> é uma pergunta: <summary> = pergunta, <p> = resposta. -->
+<section id="faq" class="no-top">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">dúvidas</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Quanto custa um site?</summary><p>Depende do tamanho e das funcionalidades. Depois de uma conversa rápida, você recebe uma proposta com valor fechado e sem custos escondidos.</p></details>
+      <details><summary>Quanto tempo leva para ficar pronto?</summary><p>Landing pages costumam ficar prontas em poucos dias. Sites completos e automações levam um pouco mais, e o prazo exato vai na proposta.</p></details>
+      <details><summary>Preciso já ter domínio e hospedagem?</summary><p>Não. Eu te oriento a contratar o domínio e cuido de toda a configuração para o site ir ao ar.</p></details>
+      <details><summary>Vou conseguir atualizar o site depois?</summary><p>Sim. Você recebe orientações de uso e, se preferir, pode contar comigo para manutenção.</p></details>
+      <details><summary>Que tipo de processo dá para automatizar?</summary><p>Quase tudo que é repetitivo: envio de mensagens, cadastro de clientes, geração de relatórios, integração entre planilhas, ERP e outros sistemas. Me conta sua rotina que eu te digo o que dá para fazer.</p></details>
+      <details><summary>Atende fora de Campinas?</summary><p>Sim! O atendimento é 100% online, para todo o Brasil e também em inglês ou espanhol.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTATO ===================== -->
+<section id="contato" class="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <span class="eyebrow dark">contato</span>
+      <h2>Bora tirar sua ideia do papel?</h2>
+      <p class="lead">Me conta o que você precisa. Respondo rápido e o orçamento é grátis e sem compromisso.</p>
+      <!-- Links com a classe js-wa recebem o link do WhatsApp pelo JavaScript lá embaixo -->
+      <div class="links">
+        <a href="#" class="js-wa"><svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>Chamar no WhatsApp</a>
+        <a href="mailto:grazielalopesromualdo@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>grazielalopesromualdo@gmail.com</a>
+        <a href="https://www.linkedin.com/in/graziela-lopes-528007329/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.4 2H3.6C2.7 2 2 2.7 2 3.6v16.8c0 .9.7 1.6 1.6 1.6h16.8c.9 0 1.6-.7 1.6-1.6V3.6c0-.9-.7-1.6-1.6-1.6zM8 19H5V9h3v10zM6.5 7.7a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5zM19 19h-3v-4.9c0-1.2 0-2.7-1.6-2.7S12.5 12.7 12.5 14v5h-3V9h2.9v1.4c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7V19z"/></svg>LinkedIn</a>
+      </div>
+    </div>
+    <!-- Formulário: não envia para servidor nenhum. O JavaScript monta a mensagem
+         e abre o WhatsApp ou o e-mail do visitante com o texto pronto. -->
+    <form id="lead" class="reveal" novalidate>
+      <div class="row">
+        <label>Seu nome<input name="nome" required autocomplete="name" placeholder="Como posso te chamar?"></label>
+        <label>Seu negócio<input name="negocio" placeholder="Ex.: clínica, loja, escritório"></label>
+      </div>
+      <label>O que você precisa?
+        <select name="servico">
+          <option>Site Completo</option>
+          <option>Landing Page</option>
+          <option>Automação</option>
+          <option>Ainda não sei, quero conversar</option>
+        </select>
+      </label>
+      <label>Conte um pouco sobre o projeto<textarea name="msg" placeholder="Objetivo, prazo, referências que você curte…"></textarea></label>
+      <div class="form-btns">
+        <button type="submit" class="btn btn-pri" data-via="wa">Enviar pelo WhatsApp</button>
+        <button type="submit" class="btn btn-sec" data-via="mail">Enviar por e-mail</button>
+      </div>
+      <p class="hint">Sua mensagem já vai prontinha. É só confirmar o envio.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer>
+  <div class="wrap">
+    <span>© 2026 Foxify · por Graziela Romualdo</span>
+    <span class="mono">&lt; feito com código e café /&gt;</span>
+    <a href="https://grraziela-romualdo.vercel.app/" target="_blank" rel="noopener">Portfólio ↗</a>
+  </div>
+</footer>
+
+<!-- Botão flutuante do WhatsApp (canto inferior direito) -->
+<a href="#" class="wa-float js-wa" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+
+<!-- Raposa 3D: desenha a raposa em todo elemento com o atributo data-fox3d -->
+<script type="module" src="fox3d.js"></script>
+
+<script>
+/* ===================== CONFIGURAÇÕES =====================
+   Troque aqui o WhatsApp, o e-mail e a mensagem padrão. */
+const WHATSAPP = "5519988258638"; // DDI (55) + DDD + número, só dígitos
+const EMAIL = "grazielalopesromualdo@gmail.com";
+const DEFAULT_MSG = "Olá! Vim pelo site da Foxify e quero um orçamento.";
+
+/* ===================== LINKS DO WHATSAPP =====================
+   Monta o link wa.me com a mensagem e coloca em todos os elementos .js-wa
+   (botão flutuante e link da seção de contato). */
+const waLink = (text) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
+document.querySelectorAll(".js-wa").forEach(a => {
+  a.href = waLink(DEFAULT_MSG);
+  a.target = "_blank";   // abre em outra aba
+  a.rel = "noopener";
+});
+
+/* ===================== BOTÕES DOS PACOTES =====================
+   Ao clicar em "Pedir orçamento", o pacote escolhido já fica
+   selecionado no formulário (usa o data-plan do botão). */
+document.querySelectorAll("[data-plan]").forEach(b => b.addEventListener("click", () => {
+  document.querySelector('select[name="servico"]').value = b.dataset.plan;
+}));
+
+/* ===================== FORMULÁRIO =====================
+   Junta nome, negócio, serviço e mensagem num texto só e abre:
+   - o WhatsApp (botão "Enviar pelo WhatsApp"), ou
+   - o e-mail do visitante (botão "Enviar por e-mail"). */
+const form = document.getElementById("lead");
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // impede a página de recarregar
+  const f = new FormData(form);
+  const nome = (f.get("nome") || "").trim();
+
+  // O nome é o único campo obrigatório
+  if (!nome) {
+    form.nome.focus();
+    form.nome.setCustomValidity("Me diz seu nome 🙂");
+    form.nome.reportValidity();
+    return;
+  }
+
+  const negocio = f.get("negocio") ? ` (${f.get("negocio")})` : "";
+  const texto = `Olá! Sou ${nome}${negocio}.\nTenho interesse em: ${f.get("servico")}.\n\n${f.get("msg") || ""}`.trim();
+
+  // e.submitter = botão que foi clicado; data-via diz se é WhatsApp ou e-mail
+  if (e.submitter && e.submitter.dataset.via === "mail") {
+    location.href = `mailto:${EMAIL}?subject=${encodeURIComponent("Orçamento: " + f.get("servico"))}&body=${encodeURIComponent(texto)}`;
+  } else {
+    window.open(waLink(texto), "_blank", "noopener");
+  }
+});
+// Tira o aviso de "nome obrigatório" assim que a pessoa começa a digitar
+form.nome.addEventListener("input", () => form.nome.setCustomValidity(""));
+
+/* ===================== ANIMAÇÃO DE ENTRADA =====================
+   Quando um elemento .reveal aparece na tela, recebe a classe .in
+   (o efeito de surgir está no style.css). */
+const io = new IntersectionObserver((entradas) => entradas.forEach(x => {
+  if (x.isIntersecting) {
+    x.target.classList.add("in");
+    io.unobserve(x.target); // anima só uma vez
+  }
+}), { threshold: .12 });
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+</body>
+</html>

@@ -250,17 +250,75 @@ header {
    Os itens estão repetidos 2x no HTML; a faixa anda até a metade e recomeça,
    o que dá a impressão de rolagem infinita.
    ========================================================================= */
-.marquee { background: var(--ink); color: var(--white); padding: 16px 0; overflow: hidden; border-block: 3px solid var(--ink); }
+/* Duas fitas cruzadas em X: a preta atrás, a rosa na frente.
+   As duas ficam empilhadas no mesmo lugar (grid-area 1/1) e cada uma inclina para um lado. */
+.tapes {
+  display: grid;
+  align-items: center;
+  overflow: hidden;            /* corta as pontas das fitas nas laterais da tela */
+  padding-block: 34px;         /* espaço para a inclinação não ser cortada em cima/embaixo */
+}
+.tapes > .marquee { grid-area: 1 / 1; justify-self: center; width: 110%; }
+
+/* Fita da frente (rosa): borda e sombra dura, no mesmo estilo dos botões */
+.marquee {
+  position: relative;
+  z-index: 2;
+  background: var(--pink);
+  color: var(--ink);
+  padding: 14px 0;
+  overflow: hidden;
+  border-block: 3px solid var(--ink);
+  box-shadow: 0 6px 0 var(--ink);
+  transform: rotate(-2.5deg);
+}
 .marquee-track {
   display: flex;
-  gap: 40px;
+  align-items: baseline;
   width: max-content;
-  animation: scroll 32s linear infinite; /* 32s = velocidade (maior = mais devagar) */
-  font-family: var(--display);
-  font-size: 1.7rem;
-  letter-spacing: .04em;
+  animation: scroll 40s linear infinite; /* 40s = velocidade (maior = mais devagar) */
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  letter-spacing: -.02em;
 }
-.marquee-track span::after { content: "✦"; color: var(--pink); margin-left: 40px; }
+.marquee-track span { display: inline-flex; align-items: baseline; gap: 10px; white-space: nowrap; }
+/* Número do serviço em fonte de código, dentro de uma etiqueta preta */
+.marquee-track i {
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: .7rem;
+  font-weight: 500;
+  background: var(--ink);
+  color: var(--pink);
+  padding: 2px 6px;
+  border-radius: 6px;
+  transform: translateY(-3px);
+}
+/* Separador: a barra "/" da logo FOX/FY */
+.marquee-track span::after { content: "/"; font-family: var(--display); font-size: 2.1rem; color: var(--white); -webkit-text-stroke: 1.5px var(--ink); margin: 0 30px; line-height: 0; }
+
+/* Fita de trás (preta): texto em fonte de código, anda para o lado contrário */
+.marquee-back {
+  z-index: 1;
+  background: var(--ink);
+  color: var(--soft);
+  padding: 9px 0;
+  box-shadow: none;
+  transform: rotate(2deg);
+}
+.marquee-back .marquee-track {
+  animation-direction: reverse;
+  animation-duration: 55s;
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: .85rem;
+  letter-spacing: .02em;
+}
+.marquee-back .marquee-track span::after { content: "//"; font-family: var(--mono); font-size: .85rem; color: var(--pink); -webkit-text-stroke: 0; margin: 0 22px; line-height: inherit; }
+
+/* Pausa ao passar o mouse */
+@media (hover: hover) { .tapes:hover .marquee-track { animation-play-state: paused; } }
 @keyframes scroll { to { transform: translateX(-50%); } }
 
 
